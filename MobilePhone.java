@@ -8,16 +8,8 @@ public class MobilePhone {
 		setPhoneNumber(phoneNumber);
 		myContacts = new ArrayList<Contact>();
 	}
-
-	public static void options() {
-		System.out.println("1: Quit\n"
-				          +"2: Print list of contacts\n"
-				          +"3: Add new contact\n"
-				          +"4: Update existing contact\n"
-				          +"5: Remove contact\n"
-				          +"6: Search/find contact");
-	} // end of options              
 	 
+	// Add a contact with unknown name
 	public boolean addContact(String phoneNumber) {
 		if (isExist(phoneNumber))
 			return false;
@@ -111,6 +103,5 @@ public class MobilePhone {
     	if (phoneNumber.length() == 11 && phoneNumber.substring(0, 2).equals("05") )
     		this.phoneNumber = phoneNumber;
       }
-    
-    
+	 
 }
