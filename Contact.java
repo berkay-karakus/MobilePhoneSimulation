@@ -3,6 +3,7 @@ public class Contact {
       private String name;
       private String phoneNumber;
       
+      
       public Contact(String phoneNumber) {
     	  this("Unknown name", phoneNumber);
       }
@@ -12,6 +13,7 @@ public class Contact {
     	  setPhoneNumber(phoneNumber);
       }
       
+      // Craete a contact instance with unknown name
       public static Contact createContact(String phoneNumber) {
     	  return createContact("Unknown name", phoneNumber);
       }
